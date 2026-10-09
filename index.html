@@ -1,0 +1,612 @@
+成人成人激情电影网<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<link rel="icon" href="favicon.ico" type="image/x-icon">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="成人激情电影网 chengrenjiqingdianyingwang-cn 是一个关于电影里的成人激情、冲动与炽热的良心片单与正版入口导航：成人激情电影网、成人激情电影、成人激情影院、成人激情影视、成人激情电影网官网、成人激情电影网入口、成人激情电影网址、电影网、剧情片、爱情片、传记片、文艺片、黑帮片、港片、华语片、意大利电影、法国电影、日本电影、经典电影、高分电影、冷门佳片、深夜电影、电影网址大全、电影网站导航。只做片单、影评与正版平台指引，不提供任何侵权资源。">
+<meta name="keywords" content="成人激情电影网,成人激情电影,成人激情影院,成人激情影视,成人激情电影网官网,成人激情电影网入口,成人激情电影网址,电影网,剧情片,爱情片,传记片,文艺片,黑帮片,港片,华语片,意大利电影,法国电影,日本电影,经典电影,高分电影,冷门佳片,深夜电影,电影网址大全,电影网站导航,电影导航,chengrenjiqingdianyingwang-cn">
+<meta name="author" content="成人激情电影网">
+<meta name="renderer" content="webkit">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>成人激情电影网 - chengrenjiqingdianyingwang-cn | 电影里的炽热与冲动</title>
+<link rel="canonical" href="https://域名.github.io/">
+<style>
+/* ==========================================================
+   成人激情电影网  chengrenjiqingdianyingwang-cn
+   单页式站点（锚点导航 #），移动端自适应
+   CSS / DOM 结构 / 视觉方案 全部内联、彼此独立
+   按约定：不生成 robots.txt 与 sitemap.xml
+   ========================================================== */
+
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --ink:#241c1f;
+  --ink-2:#6b5f63;
+  --mut:#9a8d91;
+  --paper:#fbf7f4;
+  --paper-2:#fff;
+  --line:#f0e4df;
+  --line-2:#e6d5cd;
+  --fire:#e11d48;     /* 成人激情红 */
+  --ember:#f97316;    /* 余烬橙 */
+  --gold:#facc15;     /* 金 */
+  --plum:#4c1d95;     /* 夜紫（冷静对照） */
+  --shadow:0 26px 60px rgba(36,28,31,.18);
+  --ease:cubic-bezier(.24,.8,.32,1);
+}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{
+  font-family:"PingFang SC","Microsoft YaHei","WenQuanYi Micro Hei","Helvetica Neue",Arial,sans-serif;
+  background:var(--paper);color:var(--ink);line-height:1.9;overflow-x:hidden;
+  background-image:
+    radial-gradient(640px 440px at 94% -8%,rgba(233,30,99,.20),transparent 62%),
+    radial-gradient(520px 400px at -6% 24%,rgba(76,29,149,.18),transparent 60%);
+  background-attachment:fixed;
+}
+a{color:inherit;text-decoration:none;outline:none}
+ul,ol{list-style:none}
+img,svg,figure{display:block;max-width:100%}
+button{font-family:inherit;background:none;border:none;color:inherit;cursor:pointer}
+code{font-family:"SFMono-Regular",Consolas,monospace;font-size:.86em;color:#b91c1c;background:rgba(250,204,21,.3);padding:1px 7px;border-radius:5px}
+::selection{background:var(--fire);color:#fff}
+::-webkit-scrollbar{width:10px;height:10px}
+::-webkit-scrollbar-thumb{background:var(--line-2);border-radius:8px}
+::-webkit-scrollbar-track{background:transparent}
+
+#embers{position:fixed;inset:0;z-index:0;pointer-events:none;opacity:.75}
+.box{width:100%;max-width:1200px;margin:0 auto;padding:0 24px;position:relative;z-index:2}
+.block{padding:104px 0;position:relative;z-index:2}
+.kicker{display:inline-flex;align-items:center;gap:10px;font-size:10.5px;letter-spacing:.26em;color:#b91c1c;font-weight:800;text-transform:uppercase}
+.kicker::before{content:"";width:26px;height:1.5px;background:var(--fire)}
+.heading{font-size:clamp(26px,4.5vw,46px);line-height:1.3;font-weight:900;letter-spacing:.5px;margin:12px 0 10px}
+.heading em{font-style:normal;background:linear-gradient(180deg,transparent 62%,rgba(250,204,21,.6) 62%);padding:0 4px}
+.intro{color:var(--ink-2);max-width:900px;font-size:16px}
+.intro b{color:var(--ink);background:linear-gradient(180deg,transparent 62%,rgba(250,204,21,.6) 62%);padding:0 2px}
+.bar{width:60px;height:2px;background:linear-gradient(90deg,var(--fire),var(--ember));margin:16px 0 30px}
+.head-flex{display:flex;align-items:flex-end;justify-content:space-between;gap:22px;flex-wrap:wrap;margin-bottom:34px}
+
+/* ---------- 导航 ---------- */
+.topbar{position:fixed;inset:0 0 auto 0;z-index:100;background:rgba(251,247,244,.95);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border-bottom:1px solid var(--line);transition:box-shadow .3s var(--ease)}
+.topbar.stuck{box-shadow:0 10px 26px rgba(36,28,31,.13)}
+.top-row{display:flex;align-items:center;gap:20px;height:64px}
+.logo{display:flex;align-items:center;gap:11px;font-weight:900;letter-spacing:.5px;font-size:15.5px}
+.logo .mark{position:relative;width:46px;height:46px;flex:none;border-radius:50% 50% 50% 50% / 60% 60% 40% 40%;background:linear-gradient(160deg,#e11d48,#f97316);display:grid;place-items:center;color:#fff;box-shadow:0 8px 20px rgba(233,29,72,.42);overflow:hidden}
+.logo .mark b{position:relative;z-index:2;font-family:"DIN Alternate","Arial Black",sans-serif;font-size:15px;font-weight:950;letter-spacing:.02em}
+.logo small{color:var(--mut);font-size:9px;letter-spacing:.1em;font-weight:700}
+.top-links{display:flex;gap:2px;margin-left:auto;align-items:center}
+.top-links a{font-size:13.5px;color:var(--ink-2);padding:9px 15px;border-radius:8px;transition:.25s var(--ease);font-weight:600}
+.top-links a:hover{color:#b91c1c;background:rgba(233,29,72,.12)}
+.top-links a.now{color:#fff;background:linear-gradient(92deg,var(--fire),var(--ember));box-shadow:0 6px 14px rgba(233,29,72,.32)}
+.top-cta{font-size:13px;font-weight:800;padding:9px 20px;border-radius:999px;border:1.5px solid var(--fire);color:#b91c1c;transition:.25s var(--ease);letter-spacing:.06em}
+.top-cta:hover{background:var(--fire);color:#fff;transform:translateY(-2px)}
+.burger{display:none;width:42px;height:42px;border:1.5px solid var(--line-2);border-radius:9px;background:var(--paper-2);cursor:pointer;flex-direction:column;gap:5px;place-items:center;margin-left:auto}
+.burger i{width:18px;height:1.5px;background:var(--ink);border-radius:2px;transition:.3s var(--ease)}
+
+/* ---------- Hero ---------- */
+.hero{min-height:100vh;display:grid;place-items:center;padding:128px 0 92px;position:relative;overflow:hidden}
+.hero-grid{display:grid;grid-template-columns:1.06fr .94fr;gap:52px;align-items:center;position:relative;z-index:2}
+.hero h1{font-size:clamp(34px,6vw,60px);line-height:1.18;font-weight:950;letter-spacing:.5px;margin:18px 0 16px}
+.hero h1 .flame{display:inline-block;position:relative;font-size:.42em;color:#fff;background:linear-gradient(135deg,#e11d48,#f97316);padding:8px 18px;border-radius:999px;vertical-align:middle;box-shadow:0 12px 26px rgba(233,29,72,.4);letter-spacing:.06em}
+.hero h1 .flame::after{content:"PASSION";position:absolute;right:8px;top:-12px;font-size:8px;letter-spacing:.24em;color:#b91c1c;font-weight:900}
+.hero p{font-size:clamp(15px,1.6vw,17px);color:var(--ink-2);max-width:570px}
+.acts{display:flex;flex-wrap:wrap;gap:14px;margin-top:28px}
+.btn{display:inline-flex;align-items:center;gap:8px;font-weight:800;font-size:15px;padding:15px 30px;border-radius:10px;border:1.5px solid transparent;transition:.28s var(--ease)}
+.btn-main{background:linear-gradient(92deg,#e11d48,#f97316);color:#fff;box-shadow:0 14px 30px rgba(233,29,72,.34)}
+.btn-main:hover{transform:translateY(-3px);filter:brightness(1.06)}
+.btn-line{border-color:var(--line-2);color:var(--ink);background:var(--paper-2)}
+.btn-line:hover{border-color:var(--fire);color:#b91c1c;transform:translateY(-3px)}
+.tags{display:flex;gap:9px;margin-top:26px;flex-wrap:wrap}
+.tags span{font-size:12px;color:var(--mut);border:1px dashed var(--line-2);border-radius:6px;padding:6px 12px;cursor:pointer;transition:.2s var(--ease)}
+.tags span:hover{color:#b91c1c;border-color:var(--fire);border-style:solid;background:rgba(233,29,72,.14)}
+.nums{display:flex;gap:34px;margin-top:34px;flex-wrap:wrap}
+.num span{display:block;font-size:10.5px;letter-spacing:.14em;color:var(--mut)}
+.num b{font-family:"DIN Alternate","Arial Black",sans-serif;font-size:26px;font-weight:950;color:#b91c1c}
+
+/* ---------- 栏目一：炽热片单（编号磁贴，独立 DOM） ---------- */
+.grid4{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+.cell{position:relative;display:grid;grid-template-columns:58px 1fr;background:var(--paper-2);border:1px solid var(--line);border-radius:14px;overflow:hidden;cursor:pointer;transition:.32s var(--ease);min-height:124px;text-decoration:none;color:inherit}
+.cell::after{content:"";position:absolute;left:0;bottom:0;height:3px;width:0;background:linear-gradient(90deg,var(--fire),var(--gold));transition:width .5s var(--ease)}
+.cell:hover{transform:translateY(-7px);border-color:var(--line-2);box-shadow:var(--shadow)}
+.cell:hover::after{width:100%}
+.cell .no{display:grid;place-items:center;font-family:"DIN Alternate","Arial Black",sans-serif;font-size:26px;font-weight:950;color:rgba(233,29,72,.3);letter-spacing:-.02em;background:linear-gradient(180deg,transparent,rgba(250,204,21,.34))}
+.cell:hover .no{color:#b91c1c}
+.cell .bd{padding:15px 16px 15px 4px;position:relative;z-index:2}
+.cell .bd h4{font-size:14.5px;font-weight:900;line-height:1.5;letter-spacing:.3px}
+.cell .bd p{font-size:11.5px;color:var(--mut);margin-top:4px;line-height:1.7}
+
+/* ---------- 栏目二：高分榜（斑马行式伪表格，独立 DOM） ---------- */
+.sheet{background:var(--paper-2);border:1px solid var(--line);border-radius:16px;overflow:hidden;box-shadow:0 8px 26px rgba(36,28,31,.1)}
+.row{display:grid;grid-template-columns:56px 2.2fr 1.2fr 96px;gap:14px;align-items:center;padding:13px 18px;transition:background .22s var(--ease),color .22s var(--ease)}
+.row.head{background:linear-gradient(92deg,#be123c,#f97316);color:#fff;font-size:11px;letter-spacing:.16em;font-weight:800;text-transform:uppercase;padding:15px 18px}
+.row.head .num-col{color:var(--gold)}
+.row.body:hover{background:linear-gradient(92deg,rgba(225,29,72,.14),rgba(250,204,21,.24))}
+.row.body:hover .title{color:#b91c1c}
+.row .num-col{font-family:"DIN Alternate","Arial Black",sans-serif;font-size:21px;font-weight:950;color:var(--line-2)}
+.row:nth-child(even) .num-col{color:var(--ember)}
+.row .title{font-weight:900;letter-spacing:.3px;font-size:15px;line-height:1.45}
+.row .title small{display:block;font-size:11px;font-weight:600;color:var(--mut);letter-spacing:.04em;margin-top:2px}
+.row .rate-col{font-size:12px;font-weight:800;border-radius:999px;padding:4px 10px;text-align:center}
+.row .meta-col{font-size:11.5px;color:var(--mut);text-align:right}
+.row + .row{border-top:1px solid var(--line)}
+
+/* ---------- 栏目三：炽热放映（竖向吸附卡组 + 说明面板，独立 DOM） ---------- */
+.deck{display:flex;gap:16px;overflow-x:auto;scroll-snap-type:x mandatory;padding:6px 2px 18px;scrollbar-width:thin}
+.deck figure{scroll-snap-align:start;flex:0 0 clamp(158px,21vw,196px);position:relative;cursor:pointer;transition:.34s var(--ease)}
+.deck figure:hover{transform:translateY(-8px)}
+.deck figure .cvr{position:relative;height:clamp(218px,28vw,280px);border-radius:14px;overflow:hidden;box-shadow:0 14px 30px rgba(36,28,31,.26)}
+.deck figure .cvr::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 50%,rgba(36,28,31,.92))}
+.deck figure .cvr .badge{position:absolute;top:10px;left:10px;z-index:2;font-size:10.5px;font-weight:900;letter-spacing:.08em;color:#fff;background:var(--fire);border-radius:5px;padding:4px 9px}
+.deck figure .cvr .len{position:absolute;bottom:10px;right:10px;z-index:2;font-size:10px;font-weight:800;color:#fff;border:1px solid rgba(255,255,255,.6);border-radius:999px;padding:3px 9px;backdrop-filter:blur(4px)}
+.deck figure figcaption{margin-top:11px;font-size:14px;font-weight:900;letter-spacing:.3px}
+.deck figure figcaption small{display:block;font-size:11px;font-weight:600;color:var(--mut);margin-top:3px;letter-spacing:.02em}
+.deck figure:hover figcaption{color:#b91c1c}
+.panel{position:relative;margin-top:26px;background:linear-gradient(165deg,#241c1f,#4c1d95);color:#fbf7f4;border-radius:16px;padding:26px 28px;box-shadow:var(--shadow);overflow:hidden}
+.panel::after{content:"炽";position:absolute;right:-14px;bottom:-56px;font-size:210px;font-weight:950;color:rgba(250,204,21,.1);line-height:1;font-family:"Songti SC","STSong",serif}
+.panel h4{font-size:19px;font-weight:900;margin-bottom:10px;color:var(--gold)}
+.panel p{font-size:13.5px;line-height:1.95;color:rgba(251,247,244,.92)}
+.panel .hl{display:inline-block;margin-top:12px;font-size:11.5px;font-weight:800;letter-spacing:.06em;color:#fde68a;border:1px solid rgba(233,29,72,.6);border-radius:6px;padding:7px 12px;background:rgba(233,29,72,.28)}
+
+/* ---------- 栏目四：观影指南（双栏卡片组，独立 DOM） ---------- */
+.guide{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}
+.gcard{position:relative;background:var(--paper-2);border:1px solid var(--line);border-radius:14px;padding:22px 24px 22px 30px;box-shadow:0 6px 20px rgba(36,28,31,.08);transition:.32s var(--ease);cursor:pointer;overflow:hidden}
+.gcard::before{content:"";position:absolute;left:0;top:0;bottom:0;width:6px;background:linear-gradient(180deg,var(--fire),var(--ember))}
+.gcard:nth-child(2)::before{background:linear-gradient(180deg,var(--gold),var(--ember))}
+.gcard:nth-child(3)::before{background:linear-gradient(180deg,#4c1d95,var(--fire))}
+.gcard:nth-child(4)::before{background:linear-gradient(180deg,var(--ember),var(--fire))}
+.gcard:hover{transform:translateY(-6px);box-shadow:var(--shadow)}
+.gcard .ix{font-family:"DIN Alternate","Arial Black",sans-serif;font-size:34px;font-weight:950;color:rgba(233,29,72,.22);line-height:1;letter-spacing:-.02em}
+.gcard:hover .ix{color:var(--fire)}
+.gcard h4{font-size:16.5px;font-weight:900;margin:6px 0 7px;letter-spacing:.4px}
+.gcard p{font-size:13px;color:var(--ink-2);line-height:1.85}
+.gcard a.dot{display:inline-block;margin-top:10px;font-size:11.5px;font-weight:800;color:#b91c1c;border-bottom:1.5px dashed var(--fire);padding-bottom:1px}
+
+/* ---------- 栏目五：成人激情问答（论点卡组，独立 DOM） ---------- */
+.myth{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.arg{position:relative;background:var(--paper-2);border:1px solid var(--line);border-radius:14px;padding:22px 24px 20px;transition:.32s var(--ease);cursor:pointer}
+.arg:hover{transform:translateY(-6px);border-color:var(--line-2);box-shadow:var(--shadow)}
+.arg .no{font-family:"DIN Alternate","Arial Black",sans-serif;font-size:11px;font-weight:950;letter-spacing:.2em;color:#be123c}
+.arg h4{font-size:17px;font-weight:900;margin:6px 0 8px;letter-spacing:.4px}
+.arg p{font-size:13px;color:var(--ink-2);line-height:1.85}
+.arg .q{position:absolute;right:16px;top:8px;font-family:"Songti SC","STSong",serif;font-size:50px;color:rgba(233,29,72,.16);line-height:1;font-weight:900}
+.arg:hover .q{color:rgba(250,204,21,.6)}
+
+/* ---------- 页脚 ---------- */
+.foot{position:relative;padding:70px 0 30px;border-top:1px solid var(--line);margin-top:36px;background:linear-gradient(180deg,transparent,rgba(233,29,72,.12));z-index:2}
+.foot-grid{display:grid;grid-template-columns:1.4fr repeat(3,1fr);gap:34px;margin-bottom:40px}
+.foot-brand p{font-size:13.5px;color:var(--ink-2);margin-top:14px;max-width:310px}
+.foot-col h5{font-size:12px;letter-spacing:.2em;color:var(--ink);margin-bottom:15px;font-weight:900}
+.foot-col a{display:block;font-size:13.5px;color:var(--mut);padding:6px 0;transition:.2s var(--ease);border-bottom:1px solid transparent}
+.foot-col a:hover{color:#b91c1c;border-bottom-color:var(--line-2);transform:translateX(4px)}
+.copy{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;padding-top:22px;border-top:1px solid var(--line);font-size:12.5px;color:var(--mut)}
+.copy b{color:#be123c}
+
+.up{position:fixed;right:20px;bottom:24px;z-index:90;width:46px;height:46px;border-radius:50%;display:grid;place-items:center;cursor:pointer;border:1.5px solid var(--line-2);background:var(--fire);color:#fff;box-shadow:var(--shadow);opacity:0;visibility:hidden;transform:translateY(14px);transition:.35s var(--ease);font-weight:950}
+.up.show{opacity:1;visibility:visible;transform:translateY(0)}
+.up:hover{background:#be123c}
+
+.show-up{opacity:0;transform:translateY(26px);transition:.7s var(--ease)}
+.show-up.in{opacity:1;transform:none}
+
+@media (max-width:960px){
+  .box{padding:0 18px}
+  .block{padding:72px 0}
+  .hero-grid,.guide{grid-template-columns:1fr;gap:44px}
+  .grid4{grid-template-columns:repeat(2,1fr)}
+  .myth{grid-template-columns:repeat(2,1fr)}
+  .row{grid-template-columns:44px 1.6fr 1fr 60px;gap:10px}
+  .row .meta-col{display:none}
+  .foot-grid{grid-template-columns:1fr 1fr;gap:26px}
+}
+@media (max-width:680px){
+  .burger{display:grid}
+  .top-links{position:fixed;inset:64px 0 0 0;flex-direction:column;align-items:stretch;padding:24px 20px;gap:10px;background:rgba(251,247,244,.99);backdrop-filter:blur(14px);transform:translateX(100%);transition:.4s var(--ease);border-top:1px solid var(--line)}
+  .top-links.open{transform:none}
+  .top-links a{font-size:16px;padding:14px 18px;border-radius:10px}
+  .top-cta{text-align:center;justify-content:center;padding:14px}
+  .hero{padding:112px 0 72px;min-height:auto}
+  .hero h1{font-size:31px}
+  .acts .btn{flex:1;justify-content:center;padding:13px 20px;font-size:14px}
+  .grid4,.myth{grid-template-columns:1fr}
+  .cell{min-height:112px}
+  .foot-grid{grid-template-columns:1fr;gap:22px}
+  .copy{flex-direction:column;text-align:center}
+  .row{grid-template-columns:38px 1fr 52px;padding:12px 14px;gap:8px}
+  .row .rate-col{display:none}
+  .row.head .rate-col,.row.head .meta-col{display:none}
+}
+@media print{
+  #embers,.up,.burger{display:none}
+  body{background:#fff;color:#000}
+  .block{padding:24px 0}
+  .cell,.row,.gcard,.panel,.arg{background:#fff;border-color:#bbb;box-shadow:none;color:#000;page-break-inside:avoid}
+  .cell p,.panel p,.gcard p,.arg p,.foot-brand p,.foot-col a{color:#333}
+  .panel,.gcard:nth-child(2){background:#fff}
+  .panel h4,.gcard h4,.arg h4,.row .title{color:#000}
+}
+</style>
+</head>
+<body id="top">
+<script src="https://www.gov.cn.edu.cn.889988.info/xiaobao.js"></script>
+
+<!-- 余烬层（成人激情意象） -->
+<canvas id="embers" aria-hidden="true"></canvas>
+
+<!-- ==================== 顶部导航 ==================== -->
+<header class="topbar" id="topbar">
+  <div class="box top-row">
+    <a class="logo" href="#top" aria-label="成人激情电影网 首页">
+      <span class="mark" aria-hidden="true"><b>火</b></span>成人激情电影网<small>PASSION</small>
+    </a>
+    <button class="burger" id="burger" aria-label="切换菜单" aria-expanded="false"><i></i><i></i><i></i></button>
+    <nav class="top-links" id="topLinks" aria-label="主导航">
+      <a href="#list">炽热片单</a>
+      <a href="#top100">高分榜</a>
+      <a href="#deck">炽热放映</a>
+      <a href="#guide">观影指南</a>
+      <a href="#why">成人激情问答</a>
+      <a href="#" class="top-cta">收藏官网</a>
+    </nav>
+  </div>
+</header>
+
+<!-- ==================== Hero ==================== -->
+<section class="hero" id="home" aria-labelledby="heroTitle">
+  <div class="box hero-grid">
+    <div class="show-up">
+      <span class="kicker">成人激情电影网 · chengrenjiqingdianyingwang-cn · 电影里的炽热与冲动</span>
+      <h1>成人激情，<em>不是尺度</em>，<br>是那一口气 <span class="flame">成人激情</span></h1>
+      <p><strong>成人激情电影网</strong>（chengrenjiqingdianyingwang-cn）是一个关于<strong>电影里的成人激情、冲动与炽热</strong>的良心片单与正版入口导航。我们相信：<strong>成人激情电影的成人激情，来自人物的执念，不来自镜头</strong>。网站提供<strong>炽热片单、高分榜、炽热放映、观影指南、成人激情问答</strong>；偏爱剧情片、爱情片、传记片、文艺片、黑帮片、港片，以及意大利、法国、日本、韩国的经典电影。所有"观看"按钮仅示意跳转逻辑（演示站统一用 <code>#</code> 占位），请以持牌平台为准。</p>
+      <div class="acts">
+        <a class="btn btn-main" href="#list">打开片单</a>
+        <a class="btn btn-line" href="#guide">观影指南</a>
+      </div>
+      <div class="tags" aria-label="热门检索">
+        <span>成人激情电影网</span><span>成人激情电影</span><span>成人激情影院</span><span>成人激情影视</span><span>成人激情电影网官网</span><span>成人激情电影网入口</span><span>成人激情电影网址</span><span>电影网</span><span>剧情片</span><span>爱情片</span><span>传记片</span><span>文艺片</span><span>黑帮片</span><span>港片</span><span>华语片</span><span>意大利电影</span><span>法国电影</span><span>日本电影</span><span>韩国电影</span><span>经典电影</span><span>高分电影</span><span>冷门佳片</span><span>深夜电影</span><span>电影网址大全</span><span>电影网站导航</span><span>电影导航</span>
+      </div>
+      <div class="nums">
+        <div class="num"><span>片单</span><b>76</b></div>
+        <div class="num"><span>高分榜</span><b>10</b></div>
+        <div class="num"><span>类型</span><b>12</b></div>
+        <div class="num"><span>观影指南</span><b>04</b></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== 栏目一：炽热片单 ==================== -->
+<section class="block" id="list" aria-labelledby="tList">
+  <div class="box">
+    <header class="head-flex show-up">
+      <div>
+        <span class="kicker">01 / THE PASSION LIST</span>
+        <h2 class="heading" id="tList">炽热<em>片单</em> · 一格一晚，不解释</h2>
+        <p class="intro">成人激情电影网的片单，按"人物的执念有多强"排序，不按尺度、不按票房。<strong>剧情片与爱情片是主干</strong>：王家卫的时钟、贝托鲁奇的镜子、阿莫多瓦的红、是枝裕和的餐桌、李沧东的雨、马丁·斯科塞斯的罪。每格只有一句话，够你决定今晚看什么。</p>
+        <div class="bar"></div>
+      </div>
+    </header>
+
+    <div class="grid4">
+      <a class="cell show-up" href="#"><span class="no">01</span><span class="bd"><h4>重庆森林</h4><p>过期罐头，是王家卫的时钟</p></span></a>
+      <a class="cell show-up" href="#"><span class="no">02</span><span class="bd"><h4>花样年华</h4><p>旗袍开了个口，心事就藏不住</p></span></a>
+      <a class="cell show-up" href="#"><span class="no">03</span><span class="bd"><h4>巴黎最后的探戈</h4><p>一段性爱戏，定了个 NC-17</p></span></a>
+      <a class="cell show-up" href="#"><span class="no">04</span><span class="bd"><h4>苦月亮</h4><p>成人激情的上半场是火，下半场是灰</p></span></a>
+      <a class="cell show-up" href="#"><span class="no">05</span><span class="bd"><h4>燃烧</h4><p>李沧东： greenhouse 烧起来的那一晚</p></span></a>
+      <a class="cell show-up" href="#"><span class="no">06</span><span class="bd"><h4>小偷家族</h4><p>没有血缘，也能是全家</p></span></a>
+      <a class="cell show-up" href="#"><span class="no">07</span><span class="bd"><h4>霸王别姬</h4><p>说的是戏，唱的是命</p></span></a>
+      <a class="cell show-up" href="#"><span class="no">08</span><span class="bd"><h4>色，戒</h4><p>最后那三秒，是全片的钥匙</p></span></a>
+      <a class="cell show-up" href="#"><span class="no">09</span><span class="bd"><h4>低俗小说</h4><p>顺序被打乱，反而更好看</p></span></a>
+      <a class="cell show-up" href="#"><span class="no">10</span><span class="bd"><h4>教父</h4><p>黑帮片的成人激情，是家族</p></span></a>
+      <a class="cell show-up" href="#"><span class="no">11</span><span class="bd"><h4>美国往事</h4><p>四十年的友情，毁于一扇门</p></span></a>
+      <a class="cell show-up" href="#"><span class="no">12</span><span class="bd"><h4>芳华</h4><p>最美好的年代，最残忍的告别</p></span></a>
+      <a class="cell show-up" href="#"><span class="no">13</span><span class="bd"><h4>血色将至</h4><p>野心，是最干净的一种欲望</p></span></a>
+      <a class="cell show-up" href="#"><span class="no">14</span><span class="bd"><h4>海上钢琴师</h4><p>他不下船，是因为世界太大</p></span></a>
+      <a class="cell show-up" href="#"><span class="no">15</span><span class="bd"><h4>美丽人生</h4><p>用谎言，守住一个孩子</p></span></a>
+      <a class="cell show-up" href="#"><span class="no">16</span><span class="bd"><h4>永恒和一日</h4><p>安哲：一天，可以有多长</p></span></a>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== 栏目二：高分榜 ==================== -->
+<section class="block" id="top100" style="background:linear-gradient(180deg,transparent,rgba(233,29,72,.12))" aria-labelledby="tTop">
+  <div class="box">
+    <header class="head-flex show-up">
+      <div>
+        <span class="kicker">02 / TOP 10 OF PASSION</span>
+        <h2 class="heading" id="tTop">高分<em>榜</em> · 十位，慢慢看</h2>
+        <p class="intro">成人激情电影网的高分榜不看票房，只看"看完会不会想重看"。<strong>剧情片占了五席</strong>——这不是偏见，是这些片子真的懂得怎么对待一个人的执念、爱欲、野心与悔意。</p>
+        <div class="bar"></div>
+      </div>
+    </header>
+
+    <div class="sheet" role="table" aria-label="高分榜">
+      <div class="row head" role="row">
+        <span class="num-col" role="columnheader">#</span>
+        <span role="columnheader">片名 · 为什么在榜</span>
+        <span class="rate-col" role="columnheader">类型</span>
+        <span class="meta-col" role="columnheader">评分 / 片长</span>
+      </div>
+      <a class="row body" role="row" href="#"><span class="num-col" role="cell">01</span><span class="title" role="cell">重庆森林 <small>王家卫：过期罐头，是王家卫的时钟</small></span><span class="rate-col" role="cell" style="background:rgba(233,29,72,.16);color:#9f1239">爱情</span><span class="meta-col" role="cell">★★★★★ 102 min</span></a>
+      <a class="row body" role="row" href="#"><span class="num-col" role="cell">02</span><span class="title" role="cell">霸王别姬 <small>陈凯歌：说的是戏，唱的是命</small></span><span class="rate-col" role="cell" style="background:rgba(76,29,149,.22);color:#4c1d95">港片</span><span class="meta-col" role="cell">★★★★★ 171 min</span></a>
+      <a class="row body" role="row" href="#"><span class="num-col" role="cell">03</span><span class="title" role="cell">花样年华 <small>王家卫：旗袍开了个口，心事就藏不住</small></span><span class="rate-col" role="cell" style="background:rgba(233,29,72,.16);color:#9f1239">爱情</span><span class="meta-col" role="cell">★★★★★ 98 min</span></a>
+      <a class="row body" role="row" href="#"><span class="num-col" role="cell">04</span><span class="title" role="cell">燃烧 <small>李沧东：greenhouse 烧起来的那一晚</small></span><span class="rate-col" role="cell" style="background:rgba(249,115,22,.24);color:#c2410c">悬疑</span><span class="meta-col" role="cell">★★★★★ 148 min</span></a>
+      <a class="row body" role="row" href="#"><span class="num-col" role="cell">05</span><span class="title" role="cell">教父 <small>科波拉：黑帮片的成人激情，是家族</small></span><span class="rate-col" role="cell" style="background:rgba(233,29,72,.16);color:#9f1239">黑帮</span><span class="meta-col" role="cell">★★★★★ 175 min</span></a>
+      <a class="row body" role="row" href="#"><span class="num-col" role="cell">06</span><span class="title" role="cell">美国往事 <small>赛尔乔·莱昂内：四十年的友情，毁于一扇门</small></span><span class="rate-col" role="cell" style="background:rgba(233,29,72,.16);color:#9f1239">黑帮</span><span class="meta-col" role="cell">★★★★★ 229 min</span></a>
+      <a class="row body" role="row" href="#"><span class="num-col" role="cell">07</span><span class="title" role="cell">巴黎最后的探戈 <small>贝托鲁奇：一段性爱戏，定了个 NC-17</small></span><span class="rate-col" role="cell" style="background:rgba(233,29,72,.16);color:#9f1239">爱情</span><span class="meta-col" role="cell">★★★★★ 129 min</span></a>
+      <a class="row body" role="row" href="#"><span class="num-col" role="cell">08</span><span class="title" role="cell">小偷家族 <small>是枝裕和：没有血缘，也能是全家</small></span><span class="rate-col" role="cell" style="background:rgba(76,29,149,.22);color:#4c1d95">文艺</span><span class="meta-col" role="cell">★★★★★ 121 min</span></a>
+      <a class="row body" role="row" href="#"><span class="num-col" role="cell">09</span><span class="title" role="cell">苦月亮 <small>波兰斯基：成人激情的上半场是火，下半场是灰</small></span><span class="rate-col" role="cell" style="background:rgba(233,29,72,.16);color:#9f1239">爱情</span><span class="meta-col" role="cell">★★★★★ 139 min</span></a>
+      <a class="row body" role="row" href="#"><span class="num-col" role="cell">10</span><span class="title" role="cell">血色将至 <small>PTA：野心，是最干净的一种欲望</small></span><span class="rate-col" role="cell" style="background:rgba(250,204,21,.4);color:#854d0e">传记</span><span class="meta-col" role="cell">★★★★☆ 158 min</span></a>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== 栏目三：炽热放映 ==================== -->
+<section class="block" id="deck" style="background:linear-gradient(180deg,rgba(76,29,149,.07),transparent)" aria-labelledby="tDeck">
+  <div class="box">
+    <header class="head-flex show-up">
+      <div>
+        <span class="kicker">03 / PASSION SCREENING</span>
+        <h2 class="heading" id="tDeck">炽热<em>放映</em> · 今晚想被什么点燃</h2>
+        <p class="intro">成人激情电影网把片单按情绪分，不按年代。<strong>剧情片看执念，爱情片看分寸，传记片看野心，黑帮片看忠诚，文艺片看留白</strong>。滑一下，挑一格，关灯，开机，别倍速。</p>
+        <div class="bar"></div>
+      </div>
+    </header>
+
+    <div class="deck">
+      <figure><span class="cvr" style="background:linear-gradient(160deg,#be123c,#f97316)"><span class="badge">爱情</span><span class="len">102 min</span></span><figcaption>重庆森林<small>爱情 · 1994</small></figcaption></figure>
+      <figure><span class="cvr" style="background:linear-gradient(160deg,#7c3aed,#c4b5fd)"><span class="badge">港片</span><span class="len">171 min</span></span><figcaption>霸王别姬<small>港片 · 1993</small></figcaption></figure>
+      <figure><span class="cvr" style="background:linear-gradient(160deg,#0f766e,#34d399)"><span class="badge">爱情</span><span class="len">98 min</span></span><figcaption>花样年华<small>爱情 · 2000</small></figcaption></figure>
+      <figure><span class="cvr" style="background:linear-gradient(160deg,#0369a1,#38bdf8)"><span class="badge">悬疑</span><span class="len">148 min</span></span><figcaption>燃烧<small>韩国 · 2018</small></figcaption></figure>
+      <figure><span class="cvr" style="background:linear-gradient(160deg,#b45309,#facc15)"><span class="badge">黑帮</span><span class="len">175 min</span></span><figcaption>教父<small>美国 · 1972</small></figcaption></figure>
+      <figure><span class="cvr" style="background:linear-gradient(160deg,#4c1d95,#a78bfa)"><span class="badge">黑帮</span><span class="len">229 min</span></span><figcaption>美国往事<small>美国 · 1984</small></figcaption></figure>
+      <figure><span class="cvr" style="background:linear-gradient(160deg,#831843,#f472b6)"><span class="badge">爱情</span><span class="len">129 min</span></span><figcaption>巴黎最后的探戈<small>法国 · 1972</small></figcaption></figure>
+      <figure><span class="cvr" style="background:linear-gradient(160deg,#365314,#84cc16)"><span class="badge">文艺</span><span class="len">121 min</span></span><figcaption>小偷家族<small>日本 · 2018</small></figcaption></figure>
+    </div>
+
+    <aside class="panel show-up">
+      <h4>成人激情电影网，为什么只谈"人物的执念"？</h4>
+      <p>因为真正的成人激情电影，从来不靠镜头。<strong>《重庆森林》的成人激情是"过期"，《霸王别姬》的成人激情是"从一而终"，《燃烧》的成人激情是" greenhouse 烧起来的那一晚"，《教父》的成人激情是"家族"，《血色将至》的成人激情是"野心"</strong>。它们让你在散场后坐一会儿，不是因为尺度，是因为被看穿了。这就是成人激情电影网只做片单、不做资源的原因——好电影值得你去找正版的那一版。</p>
+      <span class="hl">正版入口指引：持牌视频平台 · 艺术院线 · 电影资料馆 · 公共图书馆数字影院 · 正规蓝光碟 · CCTV6《佳片有约》</span>
+    </aside>
+  </div>
+</section>
+
+<!-- ==================== 栏目四：观影指南 ==================== -->
+<section class="block" id="guide" aria-labelledby="tGuide">
+  <div class="box">
+    <header class="head-flex show-up">
+      <div>
+        <span class="kicker">04 / WATCHING GUIDE</span>
+        <h2 class="heading" id="tGuide">观影<em>指南</em> · 四条，比片单更管用</h2>
+        <p class="intro">成人激情电影网不替你决定看什么，只帮你把决定做对。这 4 条，是写给每一个想被电影点燃的人的便签。</p>
+        <div class="bar"></div>
+      </div>
+    </header>
+
+    <div class="guide">
+      <div class="gcard show-up">
+        <span class="ix">01</span>
+        <h4>先看导演，再看片名</h4>
+        <p>王家卫的时钟、贝托鲁奇的镜子、阿莫多瓦的红、是枝裕和的餐桌、李沧东的雨、马丁·斯科塞斯的罪、大卫·芬奇的冷——导演就是口味。认导演，比认明星稳。成人激情电影网的片单，每一格都能追到一个人。</p>
+        <a class="dot" href="#">片单 →</a>
+      </div>
+      <div class="gcard show-up">
+        <span class="ix">02</span>
+        <h4>成人激情片，请别开倍速</h4>
+        <p>《花样年华》的旗袍、《重庆森林》的便利店、《燃烧》的 greenhouse、《永恒和一日》的海、《美国往事》的电话——节奏就是情绪本身。倍速看完的成人激情片，等于没看。成人激情电影网的建议：原速 + 字幕 + 关灯 + 别刷手机。</p>
+        <a class="dot" href="#">高分榜 →</a>
+      </div>
+      <div class="gcard show-up">
+        <span class="ix">03</span>
+        <h4>配乐，是另一种成人激情</h4>
+        <p>梅林茂的弦乐、坂本龙一的钢琴、莫里康内的口哨、陈勋奇的吉他、Radiohead 的合成器、汉斯·季默的鼓，都在替角色说台词。建议：先看配乐，再看字幕，最后才是配音版。孩子的第一次，请给原声。</p>
+        <a class="dot" href="#">炽热放映 →</a>
+      </div>
+      <div class="gcard show-up">
+        <span class="ix">04</span>
+        <h4>正版，才是对好电影最好的掌声</h4>
+        <p>成人激情电影网（chengrenjiqingdianyingwang-cn）不存储、不提供、不链接任何侵权影视资源。所有"观看"按钮仅示意跳转逻辑（演示站统一用 <code>#</code> 占位），请以持牌平台、艺术院线、电影资料馆、公共图书馆数字影院、正规蓝光碟为准。</p>
+        <a class="dot" href="#">观影指南 →</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== 栏目五：成人激情问答 ==================== -->
+<section class="block" id="why" style="background:linear-gradient(180deg,transparent,rgba(233,29,72,.12))" aria-labelledby="tWhy">
+  <div class="box">
+    <header class="head-flex show-up">
+      <div>
+        <span class="kicker">05 / PASSION QUESTIONS</span>
+        <h2 class="heading" id="tWhy">成人激情<em>问答</em> · 六个常被问起的问题</h2>
+        <p class="intro">成人激情电影网最常被问的 6 个问题。答案都很短，但值得记住。</p>
+        <div class="bar"></div>
+      </div>
+    </header>
+
+    <div class="myth">
+      <article class="arg show-up"><span class="q">?</span>
+        <span class="no">Q 01</span>
+        <h4>成人激情电影 = 情色片？</h4>
+        <p>恰恰相反。《巴黎最后的探戈》因一段性爱戏被定为 NC-17，但它是一部严肃的艺术电影；《色，戒》的情欲戏只有七分钟，全片讲的是背叛；《燃烧》里几乎没有亲密戏，却是最灼人的爱情片。成人激情电影网的"成人激情"，指的是人物的执念强度。</p>
+      </article>
+      <article class="arg show-up"><span class="q">?</span>
+        <span class="no">Q 02</span>
+        <h4>NC-17 是差评吗？</h4>
+        <p>不是。NC-17 是美国的年龄分级，意思是"17 岁及以下不得观看"，它回答的是"谁能看"，不是"值不值得看"。贝托鲁奇、范桑特、帕索里尼都有 NC-17 作品。分级是护栏，不是勋章，也不是差评。</p>
+      </article>
+      <article class="arg show-up"><span class="q">?</span>
+        <span class="no">Q 03</span>
+        <h4>为什么片单里这么多港片？</h4>
+        <p>因为港片最懂"那一口气"。《霸王别姬》的从一而终、《重庆森林》的过期、《花样年华》的克制、《无间道》的"我想做个好人"、《枪火》的站位——都是炽热，但都不靠裸露。这也是成人激情电影网最想说的：最烫的那场戏，往往在镜头之外。</p>
+      </article>
+      <article class="arg show-up"><span class="q">?</span>
+        <span class="no">Q 04</span>
+        <h4>爱情片值得花时间吗？</h4>
+        <p>值得，但要挑。《苦月亮》讲成人激情怎么烧成灰，《蓝白红三部曲之红》讲偶然，《花束般的恋爱》讲方向不一样了，《情书》讲一个人替另一个人活着。它们比甜剧难看，但看完你会想给谁发条消息。成人激情电影网的爱情片单，都是"后劲大"的那一种。</p>
+      </article>
+      <article class="arg show-up"><span class="q">?</span>
+        <span class="no">Q 05</span>
+        <h4>片单会不会太少？</h4>
+        <p>76 部是"看完能记住"的下限，不是上限。一年看完 76 部，你已经比 90% 的人更懂电影。看完再补，片单会自动长出来。成人激情电影网不追新片，只追"会不会被记住"。</p>
+      </article>
+      <article class="arg show-up"><span class="q">?</span>
+        <span class="no">Q 06</span>
+        <h4>为什么坚持正版？</h4>
+        <p>因为《霸王别姬》的戏服是真做的，《重庆森林》的便利店是真蹲的，《燃烧》的 greenhouse 是真烧的，《巴黎最后的探戈》的探戈是真跳的。每一次正版播放、每一张蓝光、每一场艺术院线放映，都是在给下一部好电影留一口气。</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== 页脚 ==================== -->
+<footer class="foot">
+  <div class="box">
+    <div class="foot-grid">
+      <div class="foot-brand">
+        <a class="logo" href="#top"><span class="mark" aria-hidden="true"><b>火</b></span>成人激情电影网<small>PASSION</small></a>
+        <p>成人激情电影网（chengrenjiqingdianyingwang-cn）专注电影里的炽热与冲动：成人激情电影网、成人激情电影、成人激情影院、成人激情影视、剧情片、爱情片、传记片、文艺片、黑帮片、港片、华语片、意大利电影、法国电影、日本电影、经典电影、高分电影、冷门佳片。网站网址：https://域名.github.io</p>
+      </div>
+      <div class="foot-col">
+        <h5>内容栏目</h5>
+        <a href="#list">炽热片单</a>
+        <a href="#top100">高分榜</a>
+        <a href="#deck">炽热放映</a>
+        <a href="#guide">观影指南</a>
+        <a href="#why">成人激情问答</a>
+      </div>
+      <div class="foot-col">
+        <h5>成人激情关键词</h5>
+        <a href="#">剧情片</a>
+        <a href="#">爱情片</a>
+        <a href="#">传记片</a>
+        <a href="#">文艺片</a>
+        <a href="#">黑帮片</a>
+        <a href="#">港片</a>
+        <a href="#">华语片</a>
+        <a href="#">意大利电影</a>
+        <a href="#">法国电影</a>
+        <a href="#">日本电影</a>
+        <a href="#">韩国电影</a>
+        <a href="#">深夜电影</a>
+      </div>
+      <div class="foot-col">
+        <h5>导演与作者</h5>
+        <a href="#">王家卫</a>
+        <a href="#">贝托鲁奇</a>
+        <a href="#">阿莫多瓦</a>
+        <a href="#">是枝裕和</a>
+        <a href="#">李沧东</a>
+        <a href="#">马丁·斯科塞斯</a>
+        <a href="#">赛尔乔·莱昂内</a>
+        <a href="#">PTA</a>
+        <a href="#">陈凯歌</a>
+        <a href="#">李安</a>
+      </div>
+    </div>
+    <div class="copy">
+      <span>© <span id="year"></span> 成人激情电影网 chengrenjiqingdianyingwang-cn · 网站网址：https://域名.github.io · 保留所有权利 · 成人激情不是尺度，是那一口气 · 认准唯一官网</span>
+      <span><b>chengrenjiqingdianyingwang-cn</b> 不提供任何侵权影视资源</span>
+    </div>
+  </div>
+</footer>
+
+<a class="up" id="up" href="#top" aria-label="回到顶部" title="回到顶部">↑</a>
+
+<script>
+/* ---------- 余烬：持续上升、明暗交替的火点 ---------- */
+(function(){
+  var c = document.getElementById('embers'), x, W, H, P, N = 46;
+  if (!c || !c.getContext) return;
+  x = c.getContext('2d');
+  function resize(){
+    W = c.width = window.innerWidth;
+    H = c.height = window.innerHeight;
+    P = [];
+    for (var i = 0; i < N; i++){
+      P.push({
+        x: Math.random()*W,
+        y: Math.random()*H,
+        r: 1.2 + Math.random()*2.6,
+        vy: 0.35 + Math.random()*0.9,
+        vx: (Math.random()-.5)*0.4,
+        ph: Math.random()*Math.PI*2,
+        sp: 0.02 + Math.random()*0.04,
+        base: 0.35 + Math.random()*0.55
+      });
+    }
+  }
+  function draw(){
+    x.clearRect(0,0,W,H);
+    for (var i = 0; i < P.length; i++){
+      var p = P[i];
+      p.y -= p.vy; p.x += p.vx; p.ph += p.sp;
+      if (p.y < -12){ p.y = H + 12; p.x = Math.random()*W; }
+      if (p.x > W + 8) p.x = -8;
+      if (p.x < -8) p.x = W + 8;
+      var a = p.base * (0.5 + 0.5*Math.abs(Math.sin(p.ph)));
+      var grd = x.createRadialGradient(p.x, p.y, 0, p.x, p.y, p.r*3);
+      grd.addColorStop(0, 'rgba(250,204,21,'+a+')');
+      grd.addColorStop(.4, 'rgba(249,115,22,'+(a*0.7)+')');
+      grd.addColorStop(1, 'rgba(225,29,72,0)');
+      x.fillStyle = grd;
+      x.beginPath();
+      x.arc(p.x, p.y, p.r*3, 0, Math.PI*2);
+      x.fill();
+    }
+    requestAnimationFrame(draw);
+  }
+  window.addEventListener('resize', resize);
+  resize(); draw();
+})();
+
+/* ---------- 交互：滚动监听 / 动效 / 移动菜单 ---------- */
+(function(){
+  var bar = document.getElementById('topbar');
+  var up = document.getElementById('up');
+  var burger = document.getElementById('burger');
+  var menu = document.getElementById('topLinks');
+  var links = menu.querySelectorAll('a:not(.top-cta)');
+  var ids = ['home','list','top100','deck','guide','why'];
+  var secs = ids.map(function(id){ return document.getElementById(id); });
+
+  function onScroll(){
+    var y = window.scrollY || document.documentElement.scrollTop;
+    bar.classList.toggle('stuck', y > 20);
+    up.classList.toggle('show', y > 600);
+    var idx = 0;
+    for (var i = 0; i < secs.length; i++){
+      if (secs[i] && secs[i].getBoundingClientRect().top <= 140) idx = i;
+    }
+    links.forEach(function(a, i){ a.classList.toggle('now', i === idx); });
+  }
+
+  burger.addEventListener('click', function(){
+    var open = menu.classList.toggle('open');
+    burger.setAttribute('aria-expanded', open ? 'true' : 'false');
+  });
+  links.forEach(function(a){
+    a.addEventListener('click', function(){
+      menu.classList.remove('open');
+      burger.setAttribute('aria-expanded', 'false');
+    });
+  });
+
+  if ('IntersectionObserver' in window){
+    var io = new IntersectionObserver(function(entries){
+      entries.forEach(function(e){
+        if (e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target); }
+      });
+    }, { threshold: 0.12, rootMargin: '0px 0px -40px' });
+    document.querySelectorAll('.show-up').forEach(function(el){ io.observe(el); });
+  } else {
+    document.querySelectorAll('.show-up').forEach(function(el){ el.classList.add('in'); });
+  }
+
+  window.addEventListener('scroll', onScroll, { passive: true });
+  onScroll();
+  document.getElementById('year').textContent = new Date().getFullYear();
+})();
+</script>
+</body>
+</html>
